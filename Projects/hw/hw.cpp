@@ -1,4 +1,4 @@
-#define HW_API _declspec(dllexport)
+#define HW_API extern "C" _declspec(dllexport)
 #include "hw.h"
 
 #define XON 0x11
@@ -234,11 +234,10 @@ string ConvertCharBufToString(char *buf,int nLength)
 	string strReadSerialBuff;
 	if (nLength)
 	{
-// 		for (int i=0;i<nLength;i++)
-// 		{
-// 			str+=buf[i];
-// 		}
-		str=buf;
+		for (int i=0;i<nLength;i++)
+		{
+			str+=buf[i];
+		}
 		strReadSerialBuff=str;
 		str=strReadSerialBuff.substr(strReadSerialBuff.length()-1,1);
 		if (str.compare("$"))

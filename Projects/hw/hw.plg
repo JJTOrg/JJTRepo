@@ -6,19 +6,29 @@
 --------------------Configuration: hw - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP6824.tmp" with contents
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP3E0B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "HW_EXPORTS" /FR"Debug/" /Fp"Debug/hw.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\Gita\JJTRepo\Projects\hw\hw.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP3E0B.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP3E0C.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/hw.pdb" /debug /machine:I386 /out:"Debug/hw.dll" /implib:"Debug/hw.lib" /pdbtype:sept 
 .\Debug\hw.obj
 ]
-Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP6824.tmp"
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP3E0C.tmp"
 <h3>Output Window</h3>
+Compiling...
+hw.cpp
+f:\gita\jjtrepo\projects\hw\hw.h(19) : warning C4190: '<Unknown>' has C-linkage specified, but returns UDT 'basic_string<char,struct std::char_traits<char>,class std::allocator<char> >' which is incompatible with C
 Linking...
+   Creating library Debug/hw.lib and object Debug/hw.exp
 
 
 
 <h3>Results</h3>
-hw.dll - 0 error(s), 0 warning(s)
+hw.dll - 0 error(s), 1 warning(s)
 </pre>
 </body>
 </html>
